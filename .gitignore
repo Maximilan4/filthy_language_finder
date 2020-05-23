@@ -1,5 +1,7 @@
 .idea
 *.iml
-resources
+resources/chats
 vendor
 build
+.env
+*.bin

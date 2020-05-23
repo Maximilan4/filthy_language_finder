@@ -1,0 +1,11 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    name: build connor
+    steps:
+      - uses: actions/checkout@master
+      - uses: cedrickring/golang-action@1.4.1

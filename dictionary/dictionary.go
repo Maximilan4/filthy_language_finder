@@ -8,7 +8,7 @@ import (
 )
 
 type Dictionary struct {
-	Data   map[string] int
+	Data   map[string]int
 	Words  descStringSlice
 	MinLen int
 }
@@ -22,6 +22,14 @@ func (d *Dictionary) LoadFromFile(filePath string) (bool, error) {
 	}
 
 	return true, nil
+}
+
+func (d *Dictionary) GetWordScore(word string) int {
+	if score, ok := d.Data[word]; ok {
+		return score
+	}
+
+	return 0
 }
 
 func (d *Dictionary) loadFromFile(filePath string) error {

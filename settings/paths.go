@@ -14,5 +14,3 @@ var AppPath, _ = os.UserHomeDir()
 var ResourcesPath = path.Join(AppPath, ResourcesDirectoryName)
 var RuDictionaryPath = path.Join(ResourcesPath, RuDictionaryFileName)
 var EnDictionaryPath = path.Join(ResourcesPath, EnDictionaryFileName)
-
-
